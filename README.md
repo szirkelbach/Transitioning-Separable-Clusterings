@@ -1,14 +1,22 @@
 # Project overview
 
-Currently the work done for the paper can be found in the file automated-radial-non-Trivial.ipynb
+This is intended to ge a small code repository to supplement this paprer "insert link here"
 
-There is archived work in the folder that is being turned into a python library that can be of some use, but the code is less clean and repetitave.
+There is a collection of examples that will demonstrate the algorithms described in the paper that can be used for all of the scripts.
 
+## Included files
 
-This project is focused on visualizing the transition between two optimization vectors.
+Full Run.ipynb - This Jupyter notebook will do all the steps described in the paper on a given data set
+
+LSA2RAdial.ipynb -
+
+Radial2Radial.ipynb - 
+
+TrasnportationHelper.py - this python script contains all the helper functions that that the algorithms rely on. It is shared across all the scripts to reduce how big all the Jupyter Notebooks are.
+
 
 ## Technical requirements
-This project relies on the gurobi LP solver, and prototyping is done using Jupyter notebooks. Code that has passed review will be in .py files and imported into jupyter notebooks as needed.
+This project relies on the gurobi LP solver, and prototyping is done using Jupyter notebooks.
 
 gurobi installation instructions can be found here:
 
