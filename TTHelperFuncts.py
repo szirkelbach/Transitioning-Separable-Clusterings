@@ -197,5 +197,10 @@ def printCurrentAssignment( assign, points, sites):
     return
 
 
-
+def getCurrentSites(start, end, curLambda):
+    tempSites = np.copy(start)
+    for i in range(len(tempSites)):
+        tempSites[i][0] = start[i][0] + float(curLambda)*(end[i][0] - start[i][0])
+        tempSites[i][1] = start[i][1] + float(curLambda)*(end[i][1] - start[i][1])
+    return tempSites
 
