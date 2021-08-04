@@ -11,11 +11,13 @@ All linear programs are contained in the relevant jupyter notebook, but most lin
 
 Full Run.ipynb - This Jupyter notebook will do all the steps described in the paper on a given data set.
 
-LSA2Radial.ipynb - This script focuses solely on Algorithm 2 described in the paper.
+LSA2Radial.ipynb - This notebook focuses solely on Algorithm 2 described in the paper.
 
-Radial2Radial.ipynb - This Jupyter notebook performs Algorithm 3 described in the paper.
+Radial2Radial.ipynb - This notebook performs Algorithm 3 described in the paper.
 
-TTHelperFuncts.py - this python script contains all the helper functions that the algorithms rely on. It is shared across all the notebooks.
+Random Runs.ipynb - This notebook generates random datasets and perfomrs the algorithms to allow average run time to be computed.
+
+TTHelperFuncts.py - This python script contains all the helper functions that the algorithms rely on. It is shared across all the notebooks.
 
 ## Technical requirements
 This project relies on the Gurobi LP solver, and prototyping is done using Jupyter notebooks.

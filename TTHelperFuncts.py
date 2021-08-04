@@ -51,7 +51,6 @@ def sameAssignment(assignment1, assignment2):
 
 #assignment 1 are length n. this has actual numbers in it for the clusters
 def diffCounter(assignment1, assignment2):
-    #print("length of assignment1", len(assignment1))
     count = 0
     for i in range(len(assignment1)):
         if assignment1[i] != assignment2[i]:
@@ -78,8 +77,6 @@ def genStepBounds(high, low, snap):
 
 #this creates a list of pairs (lost, anything) and (anything, grew)
 def getWiderRangeOfChangedClusters(oldAssignCount,siteAssignCount,upper,lower): #returns list of tuples
-    #print("oldAssignCount", oldAssignCount)
-    #print("siteAssignCount", siteAssignCount)
     changed = []
     grew = []
     lost = []
@@ -102,14 +99,10 @@ def getWiderRangeOfChangedClusters(oldAssignCount,siteAssignCount,upper,lower): 
 
 def getAllPairsOfClusters(k,currentAssignCount,lower,upper): #returns list of tuples
     changed = []
-    #print("current in all pairs", currentAssignCount)
-    #print(lower)
-    #print(upper)
     for i in range(k):
         for j in range(k):
             if currentAssignCount[i] > lower[i] and currentAssignCount[j] < upper[j] and not j==i:
                 changed.append((i,j))
-    #print("all allowable cluster pairs", changed)
     return changed
 
 
@@ -140,8 +133,6 @@ def exchangeCount(oldAssignCount, siteAssignCount): # boolean
 
 #this creates a list of pairs (lost, grew)
 def getChangedClusters(oldAssignCount,siteAssignCount): #returns list of tuples
-    #print("oldAssignCount", oldAssignCount)
-    #print("siteAssignCount", siteAssignCount)
     changed = []
     grew = []
     lost = []
@@ -195,7 +186,6 @@ def printCurrentAssignment( assign, points, sites):
     plt.plot(sites[4][0],sites[4][1], 'mx')
     plt.show()
     return
-
 
 def getCurrentSites(start, end, curLambda):
     tempSites = np.copy(start)
