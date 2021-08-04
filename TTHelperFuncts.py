@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import numpy as np
 from gurobipy import *
 import matplotlib.pyplot as plt
