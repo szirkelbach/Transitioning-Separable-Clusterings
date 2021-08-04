@@ -177,6 +177,16 @@ def printCurrentAssignment( assign, points, sites):
             plt.plot(points[i][0],points[i][1], 'ro')
         elif assign[i] == 3:
             plt.plot(points[i][0],points[i][1], 'co')
+        elif assign[i] == 4:
+            plt.plot(points[i][0],points[i][1], 'mo')
+        elif assign[i] == 5:
+            plt.plot(points[i][0],points[i][1], 'yo')
+        elif assign[i] == 6:
+            plt.plot(points[i][0],points[i][1], 'ko')
+        elif assign[i] == 7:
+            plt.plot(points[i][0],points[i][1], 'bo')
+        elif assign[i] == 8:
+            plt.plot(points[i][0],points[i][1], 'ro')
         else:
             plt.plot(points[i][0],points[i][1], 'mo')
     plt.plot(sites[0][0],sites[0][1], 'gx')
@@ -184,6 +194,12 @@ def printCurrentAssignment( assign, points, sites):
     plt.plot(sites[2][0],sites[2][1], 'rx')
     plt.plot(sites[3][0],sites[3][1], 'cx')
     plt.plot(sites[4][0],sites[4][1], 'mx')
+    if len(sites) > 5:
+        plt.plot(sites[5][0],sites[5][1], 'yx')
+        plt.plot(sites[6][0],sites[6][1], 'kx')
+        plt.plot(sites[7][0],sites[7][1], 'bx')
+        plt.plot(sites[8][0],sites[8][1], 'rx')
+        plt.plot(sites[9][0],sites[9][1], 'mx')
     plt.show()
     return
 
